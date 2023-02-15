@@ -180,9 +180,11 @@ footer{
 footer p{
     text-align: center;
     
+    
 }
 footer .container{
     margin-bottom: 0;
+    padding-bottom: 45px;
 }
 .singlecol{
     max-width: 750px;
@@ -194,6 +196,7 @@ footer .container{
     color: white;
     font-size: 2rem;
     justify-content: space-evenly;
+    padding-top: 25px;
     
 }
 
@@ -577,6 +580,10 @@ footer .container{
         text-align: center;
         
     }
+    footer .container{
+        margin-bottom: 0;
+    }
+
     .singlecol{
         max-width: 750px;
         margin: 0px auto;
@@ -589,5 +596,20 @@ footer .container{
         margin-top: 20px;
         justify-content: space-evenly;
         
+    }
+}
+
+
+@media screen and (min-width:820px) and (max-width:1180px){
+    footer{
+        background-color: #881337;
+        margin-top: 400px;
+    }
+    footer p{
+        text-align: center;
+        
+    }
+    footer .container{
+        margin-bottom: 0;
     }
 }

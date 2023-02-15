@@ -195,6 +195,7 @@ footer p{
 }
 footer .container{
     margin-bottom: 0;
+    padding-bottom: 45px;
 }
 
 
@@ -574,11 +575,13 @@ tr td{
         display: flex;
         justify-content: space-evenly;
         
+        
     }
     .social-media-icons-white a{
         color: white;
         font-size: 1rem;
         justify-content: space-evenly;
+        
     
         
     }
@@ -592,6 +595,7 @@ tr td{
     footer p{
         text-align: center;
         font-size: 12px;
+        
         
     }
 

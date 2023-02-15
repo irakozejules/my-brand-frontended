@@ -128,17 +128,21 @@
             <div class="contact-box">
                 <div class="contact-left">
                     <h6>Send me your request</h6>
-                    <form>
+
+
+                    <form id="form" name="contact_form">
+
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Name</label>
-                                <input type="text" placeholder="Jean Jules IRAKOZE" required>
+                                <label>Names</label>
+                                <input id="name" type="text" placeholder="Jean Jules IRAKOZE">
+                                <span></span>
                             </div>
 
 
                             <div class="input-group">
                                 <label>Phone</label>
-                                <input type="text" placeholder="+250780794472" required>
+                                <input id="phone" type="text" placeholder="+250780794472">
                             </div>
                         </div>
 
@@ -148,21 +152,24 @@
                         <div class="input-row">
                             <div class="input-group">
                                 <label>Email</label>
-                                <input type="email" placeholder="mirakozejules@gmail.com" required>
+                                <input id="email" type="email" placeholder="mirakozejules@gmail.com">
                             </div>
 
 
                             <div class="input-group">
                                 <label>Subject</label>
-                                <input type="text" placeholder="Product Demo">
+                                <input id="subject" type="text" placeholder="Product Demo">
                             </div>
                         </div>
 
                         <label>Message</label>
-                        <textarea rows="5" placeholder="Write your message" required></textarea>
+                        <textarea rows="5" placeholder="Write your message" ></textarea>
 
-                        <button type="submit">Send</button>
+                        <p id="errorMessage" hidden></p>
+                        <button id="message" type="submit">Send</button>
                     </form>
+
+
 
                 </div>
 
@@ -245,7 +252,8 @@
             
         
 </footer>
-<script src="index.js"></script>
+<script src="contact.js"></script>
+
     
 </body>
 </html>

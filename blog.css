@@ -179,6 +179,7 @@ footer p{
 }
 footer .container{
     margin-bottom: 0;
+    padding-bottom: 45px;
 }
 .singlecol{
     max-width: 750px;

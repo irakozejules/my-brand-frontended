@@ -120,12 +120,12 @@
 
             <div class="center">
                 <h1>Login</h1>
-                <P></P>
+                
                 <form action="post">
                     <div class="text-field">
 
 
-                        <input type="text" required> 
+                        <input id="username" type="text"> 
                         <span></span>
                         <label>Username</label>
 
@@ -135,13 +135,16 @@
                     <div class="text-field">
 
 
-                        <input type="password" required> 
+                        <input id="password" type="password"> 
                         <span></span>
                         <label>Password</label>
 
 
                     </div>
                     <div class="pass">Forget Password?</div>
+                    
+                    
+                    <p id="errorMessage" hidden></p>
                     <input type="submit" value="Login">
                     
                     
