@@ -16,35 +16,37 @@ hum_btn.addEventListener('click',()=>{
 const names= document.getElementById("name")
 const phone= document.getElementById("phone")
 const form= document.getElementById("form")
-const erroeMessage= document.getElementById("errorMessage")
+const message=document.getElementById("message")
+const errorMessage= document.getElementById("errorMessage")
 
 form.addEventListener("click", (e) =>{
+    e.preventDefault()
     const errors=[];
-
+console.log("hello")
     
 
     if(names.value.trim() === " "){
-        errors.push("Username Required")
+        errors.push("names are Required")
         
     }
     
 
-    if(phone.value.length<10)
+    if(phone.value.length<15)
     {
-        errors.push("Password should be greater than 10 characters")
+        errors.push("Enter your phone number")
     }
 
-    if(password.value.length>15)
-    {
-        errors.push("Password should be less than 15 characters")
-
+    if(message.value.trim()===""){
+        errors.push("Enter your message")
     }
+
+    
 
     
     if(errors.length>0){
         e.preventDefault();
-        erroeMessage.toggleAttribute('hidden')
-        erroeMessage.innerHTML = errors.join(', '); 
+        errorMessage.toggleAttribute('hidden')
+        errorMessage.innerHTML = errors.join(', '); 
     }
 })
 
