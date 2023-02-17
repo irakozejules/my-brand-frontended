@@ -16,6 +16,8 @@ const username= document.getElementById("username")
 const password= document.getElementById("password")
 const form= document.querySelector("form")
 const erroeMessage= document.getElementById("errorMessage")
+const superName="irakozejules";
+const superPassword="12345";
 
 form.addEventListener("submit", (e) =>{
     const errors=[];
@@ -25,14 +27,14 @@ form.addEventListener("submit", (e) =>{
     }
     
 
-    if(password.value.length<10)
+    if(password.value.length<4)
     {
-        errors.push("Password should be greater than 10 characters")
+        errors.push("Password should be greater than 4 characters")
     }
 
-    if(password.value.length>15)
+    if(password.value.length>10)
     {
-        errors.push("Password should be less than 15 characters")
+        errors.push("Password should be less than 10 characters")
 
     }
 
@@ -42,7 +44,70 @@ form.addEventListener("submit", (e) =>{
         erroeMessage.toggleAttribute('hidden')
         erroeMessage.innerHTML = errors.join(', '); 
     }
+
+    else{
+        if(superName===username.value && superPassword===password.value){
+            window.location.href="./dashboard.html"
+             }
+                else if(superPassword!=password.value){
+                    errors.push("Wrong password")
+                    e.preventDefault();
+                    erroeMessage.toggleAttribute('hidden')
+                    erroeMessage.innerHTML = errors.join(', ');
+                }
+                else{
+                    errors.push("Wrong credentials")
+                    e.preventDefault();
+                    erroeMessage.toggleAttribute('hidden')
+                    erroeMessage.innerHTML = errors.join(', ');
+                    
+                }
+    }
 })
+
+
+
+
+
+
+
+
+
+
+
+// const login = document.getElementById("login");
+
+// // user= JSON.parse(localStorage.getItem("users"))|| [];
+
+// function login(){
+//     if(superName===username.value && superPassword===password.value){
+//         window.location.href=""
+//     }
+//     else{
+        
+//     }
+
+    // if user exist
+    // const targetUser= user.find(user => user.username== username.value);
+    // if(targetUser && targetUser.password==password.value){
+    //     localStorage.setItem('currentUser', JSON.stringify(targetUser))
+    //     window.location.href= "profile.html";
+    // }
+    // else if(targetUser && targetUser.password != password.value){
+    //     alert('Wrong password');
+    // }
+
+    // else{
+    //     //USER DOES NOT EXIST
+    //     // alert('You are not registerd, go to signup');
+    //     window.location.href="signup.html"
+    // }
+
+// }
+// login.onclick= login;
+
+
+
 
 //END OF LOGIN VALIDATION
 //END OF LOGIN VALIDATION

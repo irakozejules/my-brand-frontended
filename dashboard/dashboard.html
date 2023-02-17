@@ -7,7 +7,7 @@
     <meta name="description" content="Official portfolio website for Jean Jules IRAKOZE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="blog.css" type="text/css">
+    <link rel="stylesheet" href="dashboard.css" type="text/css">
     <link rel="icon" href="image/Profile.JPG" type="image/x-icon">
    
     <script src="https://kit.fontawesome.com/d9090da5fb.js" crossorigin="anonymous"></script>
@@ -39,24 +39,22 @@
                         <li>
                             <a href="/index.html">HOME</a>
                         </li>
-
                         <li>
                             <a href="about.html">ABOUT</a>
                         </li>
-
                         <li>
                             <a href="experience.html">EXPERIENCE</a>
                         </li>
-
+                        <li>
+                            <a href="blog.html">BLOG</a>
+                        </li>
                         <li>
                             <a href="contact.html">CONTACT</a>
                         </li>
-
                         <li>
                             <a href="login.html">LOGIN</a>
+                            
                         </li>
-
-                        
                          
                         
                     </ul>
@@ -90,18 +88,18 @@
                         <a href="experience.html">EXPERIENCE</a>
                     </li>
                     <li>
-                        <a href="#blog">BLOG</a>
+                        <a href="blog.html">BLOG</a>
                     </li>
                     <li>
                         <a href="contact.html">CONTACT</a>
                     </li>
                     <li>
-                        <a href="login.html">LOGIN</a>
+                        <a href="#login">LOGIN</a>
                         
                     </li>
                      
-                </ul> 
-                -->
+                </ul>  -->
+               
            
     
         </header>
@@ -115,61 +113,48 @@
 
 
     <main>
-        <section id="blog">
+        <section id="login">
             
             
 
 
-            <div class="container">
-
-                <div class="row">
-                    <div class="header">
-                        <h1>My Blog</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                        </p>
-
-                        <div class="content">
-                            <div class="card">
-                                <img src="image/photography.jpeg">
-                                <h4>Photography is a Language</h4>
-                                <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
-
-                                </p>
-                            </div>
-
-
-
-
-                            <div class="card">
-                                <img src="image/Contemporary.jpeg">
-                                <h4>Contempory Dance</h4>
-                                <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                    
-                                </p>
-                            </div>
-
-
-
-
-
-
-
-                            <div class="card">
-                                <img src="image/kigali.jpeg">
-                                <h4>Kigali should be your dream Place</h4>
-                                <p>unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                    
-                                </p>
-                            </div>
-                        </div>
+            
+                <h1>Dash board</h1>
+                <br><br><br>
+                <h3>Create Post</h3>
+                
+                <div class="blog">
+                    <div class="title">
+                        <input class="title" type="text" placeholder="title">
                     </div>
+
+                    <div class="description">
+                        
+                        <textarea name="description" id=""  placeholder="Post Description"></textarea>
+                    </div>
+
+                    <div class="file">
+                        <input type="file" accept="image/*" id="file">
+                        
+
+                        <label for="file">
+                            <i class="fa-regular fa-image"></i>
+                             &nbsp; Choose a Photo</label>
+                    </div>
+                    <br><br><br>
                     
+                    <div class="button">
+                        <button>Save Post</button>
+                    </div>
                 </div>
+                
+         </section>        
+
+            
 
            
 
-            </div>
+           
            
            
 
@@ -180,12 +165,12 @@
 
                
                 
-<br><br><br><br><br><br>
 
 
-        </section>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+       
     </main>
-
+    
     <footer>
         <hr>
         <br>
@@ -218,11 +203,11 @@
         
             </div>
 
-            
+        </div>
 
         
 </footer>
-    <script src="index.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 </html>
 

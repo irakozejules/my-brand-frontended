@@ -375,6 +375,7 @@ button{
     border: none;
     outline: none;
     color: #fff;
+    cursor: pointer;
     height: 35px;
     border-radius: 30px;
     margin-top: 20px;
