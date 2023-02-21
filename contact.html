@@ -132,39 +132,54 @@
                     <form id="form" name="contact_form">
 
                         <div class="input-row">
+
+                           <div style="width: 45%;"> 
+
                             <div class="input-group">
                                 <label>Names</label>
                                 <input id="name" type="text" placeholder="Jean Jules IRAKOZE">
                                 <span></span>
                             </div>
+                            <p class="errorMessage" id="errorNames" hidden ></p>
 
+                            </div>
 
-                            <div class="input-group">
+                            <div style="width: 45%;">
+                                 
+                                <div class="input-group">
                                 <label>Phone</label>
                                 <input id="phone" type="text" placeholder="+250780794472">
                             </div>
+                           
+                            <p class="errorMessage" id="errorPhone" hidden ></p>
+                        </div>
                         </div>
 
 
 
 
                         <div class="input-row">
+                           <div style="width: 45%;"> 
                             <div class="input-group">
                                 <label>Email</label>
                                 <input id="email" type="email" placeholder="mirakozejules@gmail.com">
                             </div>
+                            <p class="errorMessage" id="errorEmail" hidden ></p>
+                            </div>
 
-
-                            <div class="input-group">
+                            <div style="width: 45%;"><div class="input-group">
                                 <label>Subject</label>
                                 <input id="subject" type="text" placeholder="Product Demo">
+                            </div>
                             </div>
                         </div>
 
                         <label>Message</label>
                         <textarea rows="5" placeholder="Write your message" id="message"  ></textarea>
 
-                        <p id="errorMessage" hidden></p>
+                        <p class="errorMessage" id="errorMessage" hidden ></p>
+
+                        
                         <button id="message" type="submit" >Send</button>
                     </form>
 

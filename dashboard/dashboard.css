@@ -125,6 +125,31 @@ button{
     font-size: 20px;
     width: 130px;
     padding: 5px;
+    margin-bottom: 100px;
+}
+
+.post{
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.edit{
+    background-color: #881337;
+    width: 800px;
+    height: 300px;
+}
+h4{
+    padding-top: 20px;
+    align-items: center;
+}
+img{
+    width: 400px;
+    height: 300px;
+    margin-left: 80px;
+
 }
 
 

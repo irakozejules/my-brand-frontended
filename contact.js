@@ -17,36 +17,92 @@ const names= document.getElementById("name")
 const phone= document.getElementById("phone")
 const form= document.getElementById("form")
 const message=document.getElementById("message")
+const email=document.getElementById("email")
+
+
+const errorNames= document.getElementById("errorNames")
+const errorPhone= document.getElementById("errorPhone")
+const errorEmail= document.getElementById("errorEmail")
 const errorMessage= document.getElementById("errorMessage")
+
+
+
+function isValidEmail(email) {
+    // regular expression to check email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    
+    // check if the email matches the regular expression
+    return emailRegex.test(email);
+  }
+
+
 
 form.addEventListener("click", (e) =>{
     e.preventDefault()
-    const errors=[];
-console.log("hello")
+    const error_Names=[];
+    const error_Phone=[];
+    const error_Email=[];
+    const error_Message=[];
+    
+    console.log(errorEmail)
+
     
 
     if(names.value.trim() === " "){
-        errors.push("names are Required")
+        error_Names.push("Your names are Required")
+        
+    }
+    if(names.value.length<1){
+        error_Names.push("Your names are Required")
         
     }
     
 
-    if(phone.value.length<15)
+    if(phone.value.trim()=== " ")
     {
-        errors.push("Enter your phone number")
+        error_Phone.push("Enter your phone number")
+    }
+    if(phone.value.length<10)
+    {
+        error_Phone.push("Phone number should be more than 10 digits")
     }
 
-    if(message.value.trim()===""){
-        errors.push("Enter your message")
+
+    if(isValidEmail(email))
+    {
+        error_Email.push("Your email is valid")
+        console.log(`The email ${email} is not valid.`);
+
+    }else {
+        console.log(`The email ${email} is not valid.`);
+        error_Email.push("Your email is not valid")
+      }
+
+    // if(message.value.trim()===""){
+    //     errors.push("Enter your message")
+    // }
+
+    if(message.value.length<2){
+        error_Message.push("Write your message")
     }
 
     
 
     
-    if(errors.length>0){
+    if(error_Names.length>0 || error_Phone.length>0 || error_Email.length>0 || error_Message>0){
         e.preventDefault();
+        errorNames.toggleAttribute('hidden')
+        errorNames.innerHTML = error_Names.join(', '); 
+
+
+        errorPhone.toggleAttribute('hidden')
+        errorPhone.innerHTML = error_Phone.join(', '); 
+
+        errorEmail.toggleAttribute('hidden')
+        errorEmail.innerHTML= error_Email.join(', ');
+
         errorMessage.toggleAttribute('hidden')
-        errorMessage.innerHTML = errors.join(', '); 
+        errorMessage.innerHTML=error_Message.join(', ');
     }
 })
 

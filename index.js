@@ -15,39 +15,45 @@ hum_btn.addEventListener('click',()=>{
 const username= document.getElementById("username")
 const password= document.getElementById("password")
 const form= document.querySelector("form")
-const erroeMessage= document.getElementById("errorMessage")
+const errorUsername= document.getElementById("errorUsername")
+const errorPassword=document.getElementById("errorPassword")
 const superName="irakozejules";
 const superPassword="12345";
 
 form.addEventListener("submit", (e) =>{
-    const errors=[];
+    const errors_pass=[];
+    const errors_username=[];
 
     if(username.value.trim() === ""){
-        errors.push("Username Required")
+        errors_username.push("Username Required")
     }
     
 
     if(password.value.length<4)
     {
-        errors.push("Password should be greater than 4 characters")
+        errors_pass.push("Password should be greater than 4 characters")
     }
 
     if(password.value.length>10)
     {
-        errors.push("Password should be less than 10 characters")
+        errors_pass.push("Password should be less than 10 characters")
 
     }
 
     
-    if(errors.length>0){
+    if(errors_username.length>0 || errors_pass.length>0){
         e.preventDefault();
-        erroeMessage.toggleAttribute('hidden')
-        erroeMessage.innerHTML = errors.join(', '); 
+        errorUsername.toggleAttribute('hidden')
+        errorUsername.innerHTML = errors_username.join(', '); 
+
+
+        errorPassword.toggleAttribute('hidden')
+        errorPassword.innerHTML = errors_pass.join(', '); 
     }
 
     else{
         if(superName===username.value && superPassword===password.value){
-            window.location.href="./dashboard.html"
+            window.location.href="../dashboard.html"
              }
                 else if(superPassword!=password.value){
                     errors.push("Wrong password")

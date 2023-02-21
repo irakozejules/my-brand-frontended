@@ -230,29 +230,48 @@ footer .container{
 
 .background-page{
 
-    
-    font-weight: 100;
-    font-size: 16px;
+    align-items: center;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    padding: 10px;
-    background-color: #881337;
+    justify-content: center;
+    display: flex;
+    
+    
+    margin: 0 auto;
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    width: 65%;
+    padding: 10px 0px;
+    
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 
 }
 
 h3{
-    
+    width: 65%;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+    margin: 0 auto;
+    display: block;
     font-size: 20px;
     text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
     padding: 10px;
-    background-color: #881337;
+    
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+.about{
+background-color: #881337;
+width: 65%;
+margin: 0 auto;
+padding: 10px 0px;
+
 }
 .skills-icons-white{
 
@@ -268,6 +287,8 @@ h3{
     
     font-size: 18px;
     text-align: center;
+    /* width: 65%; */
+    margin: 0 auto;
     margin-left: 100px;
     margin-right: 100px;
 
@@ -353,6 +374,7 @@ input{
     border-bottom: 1px solid #ccc;
     outline: none;
     padding-bottom: 5px;
+    font-size: 11px;
 }
 
 textarea{
@@ -400,6 +422,10 @@ tr td:first-child{
 
 tr td{
     padding-top: 20px;
+}
+.errorMessage{
+    color: #881337;
+    font-size: 12px;
 }
 
 
@@ -750,7 +776,7 @@ h6{
 
 input{
     width: 100%;
-    font-size: 20px;
+    font-size: 9px;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
@@ -763,6 +789,7 @@ textarea{
     outline: none;
     padding: 10px;
     box-sizing: border-box;
+    font-size: 12px;
 }
 
 label{
