@@ -28,6 +28,7 @@ body{
     margin: 0;
    
 }
+
 .navbar a{
     text-decoration: none;
     color: white;
@@ -40,9 +41,14 @@ body{
     margin-top: 2px;
     margin-bottom: 50px;
 }
+
+
 .navbar a:hover{
     background-color:#881337;
     font-weight: 600;
+   
+    
+    
 }
 
 
@@ -476,6 +482,7 @@ tr td{
     .navbar{
         display: none;
         position: fixed;
+        
     
     }
 
@@ -483,20 +490,23 @@ tr td{
         display: block !important;
         background-color: #0a192f;
         width: 100%;
-        height: 100%;
+        height: 100%; 
         margin-top: 0;
         z-index: 1000;
         top: 0%;
         bottom: 0%;
         
+        
     }
     .mobile-navbar li{
         display: block;
         margin: auto;
+       
 
     }
     .show-nav{
         display: flex;
+        padding: 0px;
     }
 
     img{
