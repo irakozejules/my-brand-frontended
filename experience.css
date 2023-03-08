@@ -173,7 +173,7 @@ footer .container{
     font-size: 2rem;
     justify-content: space-evenly;
     
-}*/
+}
 
 
 
@@ -198,13 +198,14 @@ footer .container{
     height: 5px;
    
     width: 25px;
+    z-index: 2000;
     
 }
 .show-nav{
     position: absolute;
     top:10px;
     right:20px;
-   z-index: 2000;
+   z-index: 5000;
     display: none;
 }
 @media screen and (max-width:576px) 
@@ -234,6 +235,7 @@ footer .container{
     }
     .show-nav{
         display: flex;
+        
     }
     
 
@@ -410,6 +412,8 @@ footer .container{
     }
     .show-nav{
         display: flex;
+        width: 50px;
+        height: 50px;
     }
 
 

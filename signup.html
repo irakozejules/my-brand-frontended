@@ -7,24 +7,22 @@
     <meta name="description" content="Official portfolio website for Jean Jules IRAKOZE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="main.css" type="text/css">
+    <link rel="stylesheet" href="signup.css" type="text/css">
     <link rel="icon" href="image/Profile.JPG" type="image/x-icon">
    
     <script src="https://kit.fontawesome.com/d9090da5fb.js" crossorigin="anonymous"></script>
 
-    <style>
+    <style type="text/css">
         body{
-            
-           background-color:  #0a192f;
+            background-color: #0a192f;
         }
+
     </style>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
-
-
 
 </head>
 
@@ -35,14 +33,15 @@
 <body>
    
         <header>
-
             <div id="navbar" class="navbar ">
                 <nav>
                     <ul>
                         <li>
                             <a href="/index.html">HOME</a>
                         </li>
-                        
+                        <li>
+                            <a href="about.html">ABOUT</a>
+                        </li>
                         <li>
                             <a href="experience.html">EXPERIENCE</a>
                         </li>
@@ -54,10 +53,6 @@
                         </li>
                         <li>
                             <a href="login.html">LOGIN</a>
-                            
-                        </li>
-                        <li>
-                            <a href="signup.html">SIGNUP</a>
                             
                         </li>
                         
@@ -81,15 +76,14 @@
             </div>
             </div>
             
-            
-            <!--<div class="navbar">
+            <!-- <div class="navbar">
             <nav>
                 <ul>
                     <li>
                         <a href="/index.html">HOME</a>
                     </li>
                     <li>
-                        <a href="#about">ABOUT</a>
+                        <a href="about.html">ABOUT</a>
                     </li>
                     <li>
                         <a href="experience.html">EXPERIENCE</a>
@@ -101,13 +95,13 @@
                         <a href="contact.html">CONTACT</a>
                     </li>
                     <li>
-                        <a href="login.html">LOGIN</a>
+                        <a href="#login">LOGIN</a>
                         
                     </li>
                      
-                </ul>-->
+                </ul>  -->
                
-            
+           
     
         </header>
     
@@ -120,80 +114,85 @@
 
 
     <main>
-        <section id="about">
-            <h1 class=second-page>About Me</h1>
-            <p class="positioning">JEAN JULES IRAKOZE IS A WEB DEVELOPER AND DESIGNER WHO IS CURRENTLY LIVING IN KIGALI CITY, RWANDA.</p>
-            <br>
-            <br>
-            <br>
-            <div class="about">
-            <h3>Background</h3>
+        <section id="login">
+            
+            
 
-            <p class="background-page">I am a person who loves creating new thing and working with other to solve any problem the society is facing. My interest for Web Development started in 2022 when I started creating a website for one of the sales shop. I started using HTML, CSS, and Java.
-                My focus for today is to continue my journey of becoming a full stack software engineer. Moreover I look forward to start working on a lot of project with other people as we solve different problems the world is facing today.</p>
-            </div>
+
+            <div class="center">
+                <h1>Sign Up</h1>
                 
-                <br>
-
-                <div class="container">
-                    <h4 class="skills">Programming & Designing skills:</h4>
-                    <br> 
-                    <P class="text-skills">I am an inquisitive developer who embrace and adapt quickly to new responsibilities. I am enthusiastic to gain new knowledge, skills, and techniques. Moreover, I am able to level up on any skill in case it's one of the project requierements.</P>
-
-                    <br> 
-                    <div class="skills-icons-white">
-                        
-                         <a>
-                            <i class="fa-brands fa-css3"></i>
-                            <p>CSS</p>
-                        </a>
-                        
-                        <a>
-                            <i class="fa-brands fa-js"></i>
-                            <p>Javascript</p>
-                        </a>
-
-                        <a>
-                            <i class="fa-brands fa-react"></i>
-                            <p>React</p>
-                        </a>
+                <form action="post">
+                     <div class="text-field">
 
 
-                        <a>
-                            <i class="fa-brands fa-github"></i>
-                            <p>GitHub</p>
-                        </a>
+                        <input id="fullname" type="text"> 
+                        <span></span>
+                        <label>Full Names</label>
+                    
 
-                        <a>
-                            <i class="fa-brands fa-git-alt"></i>
-                            <p>Git Control Version</p>
-                            
-                        </a>
-
-                        <a>
-                            <i class="fa-brands fa-node-js"></i>
-                            <p>NodeJs</p>
-                        </a>
-
-
-                        <a>
-                            <i class="fa-brands fa-html5"></i>
-                            <p>HTML</p>
-                        </a>
-
-                       
                     </div>
+                    <p id="errorNames" hidden></p>
+                    
+                     
 
-                </div>
-                <br><br><br><br>
+
+                    
+                    <div class="text-field">
+
+
+                        <input id="username" type="text"> 
+                        <span></span>
+                        <label>Email</label>
+                        
+
+
+                    </div>
+                    <p id="errorUsername" hidden></p>
 
 
 
+                    <div class="text-field">
+
+                        <input id="password" type="password"> 
+                        <span></span>
+                        <label>Password</label>
+                        
+
+                    </div>
+                    <p id="errorPassword" hidden></p>
+                    <br><br>
+                    
+                    
+                    
+                    <!-- <p id="errorMessage" hidden></p> -->
+                    <input type="submit" id="login" value="Signup">
+
+                </form>
+
+            
+
+           
+
+            </div>
+           
+           
+
+            
+
+           
+                
+
+               
+                
+
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </section>
     </main>
-
-    <footer>
-     
+    
+    <footer class="footerContent">
+       
         <br>
         <br>
         <p>Jean Jules IRAKOZE &copy; 2023 All Right Reserved</p>
@@ -224,12 +223,12 @@
         
             </div>
 
-            
+        </div>
 
         
 </footer>
-
-<script src="index.js"></script>
-    
+    <script src="signup.js"></script>
 </body>
 </html>
+
+
