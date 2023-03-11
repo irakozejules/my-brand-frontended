@@ -7,7 +7,7 @@
     <meta name="description" content="Official portfolio website for Jean Jules IRAKOZE">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="login.css" type="text/css">
+    <link rel="stylesheet" href="dash.css" type="text/css">
     <link rel="icon" href="image/Profile.JPG" type="image/x-icon">
    
     <script src="https://kit.fontawesome.com/d9090da5fb.js" crossorigin="anonymous"></script>
@@ -52,10 +52,9 @@
                             <a href="contact.html">CONTACT</a>
                         </li>
                         <li>
-                            <a href="signup.html">SIGNUP</a>
+                            <a href="login.html">LOGIN</a>
                             
                         </li>
-                        
                          
                         
                     </ul>
@@ -114,70 +113,24 @@
 
 
     <main>
-        <section id="login">
-            
-            
-
-
-            <div class="center">
-                <h1>Login</h1>
-                
-                <form action="post">
-                    <div class="text-field">
-
-
-                        <input id="username" type="text"> 
-                        <span></span>
-                        <label>Username</label>
-                        
-
-
-                    </div>
-                    <p id="errorUsername" hidden></p>
-
-                    <div class="text-field">
-
-
-                        <input id="password" type="password"> 
-                        <span></span>
-                        <label>Password</label>
-                        
-
-
-                    </div>
-                    <p id="errorPassword" hidden></p>
-                    <br><br>
-                    <div class="pass">Forget Password?</div>
-                    
-                    
-                    <!-- <p id="errorMessage" hidden></p> -->
-                    <input type="submit" id="login" value="Login">
-
-                </form>
-
-            
-
-           
-
-            </div>
-           
-           
-
-            
-
-           
-                
-
-               
-                
-
-
+        <h1>Dashboard</h1>
+  <table id="blog_table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
             <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        </section>
+       
     </main>
     
-    <footer class="footerContent">
-       
+    <footer>
+        
         <br>
         <br>
         <p>Jean Jules IRAKOZE &copy; 2023 All Right Reserved</p>
@@ -212,8 +165,7 @@
 
         
 </footer>
-    <!-- <script src="index.js"></script> -->
-    <script src="login.js"></script>
+    <script src="dash.js"></script>
 </body>
 </html>
 
