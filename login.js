@@ -6,9 +6,9 @@ console.log('hello')
 const form=document.getElementById("post")
 
 //add event Listener
-form.addEventListener("submit", (e)=>{
-    e.defaultPrevented;
-
+form.addEventListener("submit", (event)=>{
+    event.defaultPrevented;
+console.log("hey")
 
     // grab values
     const email =document.getElementById("username").value
@@ -32,7 +32,7 @@ form.addEventListener("submit", (e)=>{
 
           // set our token in LS
           localStorage.setItem("authToken", data.token)
-          location.href="/dash.html"
+          //location.href="/dash.html"
         } else {
           alert(data.message)
         }
